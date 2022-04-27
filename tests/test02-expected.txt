@@ -1,0 +1,185 @@
+set-n-levels: 5
+insert(4, JFK): successful
+insert(9, ORD): successful
+insert(20, DFW): successful
+get-min-key: 4
+list-heap:
+  {lev: 0 nodeCt: 3}
+  [20 DFW]
+  {lev: 1 nodeCt: 1}
+  (4)
+  [4 JFK]
+  [9 ORD]
+Structured list:
+  {lev: 0 nodeCt: 3}
+    Tree: 0
+      [20 DFW]
+  {lev: 1 nodeCt: 1}
+    Tree: 0
+      | [4 JFK]
+      (4)
+      | [9 ORD]
+insert(5, DEL): successful
+insert(6, LAX): successful
+get-min-key: 4
+get-max-level(JFK): 2
+get-max-level(ORD): 0
+get-max-level(DFW): 0
+get-max-level(DEL): 1
+get-max-level(LAX): 0
+list-heap:
+  {lev: 0 nodeCt: 5}
+  [20 DFW]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+  (4)
+  (4)
+  [4 JFK]
+  [9 ORD]
+  (5)
+  [5 DEL]
+  [6 LAX]
+Structured list:
+  {lev: 0 nodeCt: 5}
+    Tree: 0
+      [20 DFW]
+  {lev: 1 nodeCt: 2}
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [4 JFK]
+      | (4)
+      | | [9 ORD]
+      (4)
+      | | [5 DEL]
+      | (5)
+      | | [6 LAX]
+insert(7, CDG): successful
+insert(16, SFO): successful
+get-min-key: 4
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [20 DFW]
+  {lev: 1 nodeCt: 3}
+  (7)
+  [7 CDG]
+  [16 SFO]
+  {lev: 2 nodeCt: 1}
+  (4)
+  (4)
+  [4 JFK]
+  [9 ORD]
+  (5)
+  [5 DEL]
+  [6 LAX]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [20 DFW]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [7 CDG]
+      (7)
+      | [16 SFO]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [4 JFK]
+      | (4)
+      | | [9 ORD]
+      (4)
+      | | [5 DEL]
+      | (5)
+      | | [6 LAX]
+insert(14, ATL): successful
+get-min-key: 4
+list-heap:
+  {lev: 0 nodeCt: 8}
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  [4 JFK]
+  [9 ORD]
+  (5)
+  [5 DEL]
+  [6 LAX]
+  (7)
+  (7)
+  [7 CDG]
+  [16 SFO]
+  (14)
+  [14 ATL]
+  [20 DFW]
+Structured list:
+  {lev: 0 nodeCt: 8}
+  {lev: 1 nodeCt: 4}
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [4 JFK]
+      | | (4)
+      | | | [9 ORD]
+      | (4)
+      | | | [5 DEL]
+      | | (5)
+      | | | [6 LAX]
+      (4)
+      | | | [7 CDG]
+      | | (7)
+      | | | [16 SFO]
+      | (7)
+      | | | [14 ATL]
+      | | (14)
+      | | | [20 DFW]
+insert(8, PEK): successful
+insert(11, BOS): successful
+get-min-key: 4
+list-heap:
+  {lev: 0 nodeCt: 10}
+  {lev: 1 nodeCt: 5}
+  (8)
+  [8 PEK]
+  [11 BOS]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (4)
+  (4)
+  (4)
+  [4 JFK]
+  [9 ORD]
+  (5)
+  [5 DEL]
+  [6 LAX]
+  (7)
+  (7)
+  [7 CDG]
+  [16 SFO]
+  (14)
+  [14 ATL]
+  [20 DFW]
+Structured list:
+  {lev: 0 nodeCt: 10}
+  {lev: 1 nodeCt: 5}
+    Tree: 0
+      | [8 PEK]
+      (8)
+      | [11 BOS]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [4 JFK]
+      | | (4)
+      | | | [9 ORD]
+      | (4)
+      | | | [5 DEL]
+      | | (5)
+      | | | [6 LAX]
+      (4)
+      | | | [7 CDG]
+      | | (7)
+      | | | [16 SFO]
+      | (7)
+      | | | [14 ATL]
+      | | (14)
+      | | | [20 DFW]

@@ -1,0 +1,11 @@
+set-n-levels:5
+insert:X02:2
+insert:X09:9
+get-min-key
+list-heap
+insert:X05:5
+insert:X03:3
+insert:X07:7
+list-heap
+get-min-key
+list-heap
