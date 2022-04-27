@@ -1,0 +1,190 @@
+set-n-levels: 5
+get-min-key: Failure due to exception: "Empty heap"
+insert(88, BWI): successful
+insert(42, LAX): successful
+insert(26, IAD): successful
+insert(67, DCA): successful
+insert(94, JFK): successful
+insert(48, ATL): successful
+insert(19, SFO): successful
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [19 SFO]
+  [26 IAD]
+  [42 LAX]
+  [48 ATL]
+  [67 DCA]
+  [88 BWI]
+  [94 JFK]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [19 SFO]
+    Tree: 1
+      [26 IAD]
+    Tree: 2
+      [42 LAX]
+    Tree: 3
+      [48 ATL]
+    Tree: 4
+      [67 DCA]
+    Tree: 5
+      [88 BWI]
+    Tree: 6
+      [94 JFK]
+get-max-level(BWI): 0
+get-max-level(LAX): 0
+get-max-level(IAD): 0
+get-max-level(DCA): 0
+get-max-level(JFK): 0
+get-max-level(ATL): 0
+get-max-level(SFO): 0
+get-min-key: 19
+list-heap:
+  {lev: 0 nodeCt: 7}
+  [94 JFK]
+  {lev: 1 nodeCt: 3}
+  (67)
+  [67 DCA]
+  [88 BWI]
+  {lev: 2 nodeCt: 1}
+  (19)
+  (19)
+  [19 SFO]
+  [26 IAD]
+  (42)
+  [42 LAX]
+  [48 ATL]
+Structured list:
+  {lev: 0 nodeCt: 7}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 3}
+    Tree: 0
+      | [67 DCA]
+      (67)
+      | [88 BWI]
+  {lev: 2 nodeCt: 1}
+    Tree: 0
+      | | [19 SFO]
+      | (19)
+      | | [26 IAD]
+      (19)
+      | | [42 LAX]
+      | (42)
+      | | [48 ATL]
+get-max-level(BWI): 0
+get-max-level(LAX): 1
+get-max-level(IAD): 0
+get-max-level(DCA): 1
+get-max-level(JFK): 0
+get-max-level(ATL): 0
+get-max-level(SFO): 2
+clear: successful
+get-min-key: Failure due to exception: "Empty heap"
+insert(67, DCA): successful
+insert(26, IAD): successful
+insert(48, ATL): successful
+insert(19, SFO): successful
+insert(88, BWI): successful
+insert(94, JFK): successful
+insert(42, LAX): successful
+insert(73, ORD): successful
+insert(55, DFW): successful
+insert(13, SEA): successful
+insert(22, MIA): successful
+list-heap:
+  {lev: 0 nodeCt: 11}
+  [13 SEA]
+  [19 SFO]
+  [22 MIA]
+  [26 IAD]
+  [42 LAX]
+  [48 ATL]
+  [55 DFW]
+  [67 DCA]
+  [73 ORD]
+  [88 BWI]
+  [94 JFK]
+Structured list:
+  {lev: 0 nodeCt: 11}
+    Tree: 0
+      [13 SEA]
+    Tree: 1
+      [19 SFO]
+    Tree: 2
+      [22 MIA]
+    Tree: 3
+      [26 IAD]
+    Tree: 4
+      [42 LAX]
+    Tree: 5
+      [48 ATL]
+    Tree: 6
+      [55 DFW]
+    Tree: 7
+      [67 DCA]
+    Tree: 8
+      [73 ORD]
+    Tree: 9
+      [88 BWI]
+    Tree: 10
+      [94 JFK]
+get-min-key: 13
+list-heap:
+  {lev: 0 nodeCt: 11}
+  [94 JFK]
+  {lev: 1 nodeCt: 5}
+  (73)
+  [73 ORD]
+  [88 BWI]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+  (13)
+  (13)
+  (13)
+  [13 SEA]
+  [19 SFO]
+  (22)
+  [22 MIA]
+  [26 IAD]
+  (42)
+  (42)
+  [42 LAX]
+  [48 ATL]
+  (55)
+  [55 DFW]
+  [67 DCA]
+Structured list:
+  {lev: 0 nodeCt: 11}
+    Tree: 0
+      [94 JFK]
+  {lev: 1 nodeCt: 5}
+    Tree: 0
+      | [73 ORD]
+      (73)
+      | [88 BWI]
+  {lev: 2 nodeCt: 2}
+  {lev: 3 nodeCt: 1}
+    Tree: 0
+      | | | [13 SEA]
+      | | (13)
+      | | | [19 SFO]
+      | (13)
+      | | | [22 MIA]
+      | | (22)
+      | | | [26 IAD]
+      (13)
+      | | | [42 LAX]
+      | | (42)
+      | | | [48 ATL]
+      | (42)
+      | | | [55 DFW]
+      | | (55)
+      | | | [67 DCA]
+get-max-level(SEA): 3
+get-max-level(BWI): 0
+get-max-level(JFK): 0
+get-max-level(LAX): 2
+get-max-level(DFW): 1
+get-max-level(ORD): 1
